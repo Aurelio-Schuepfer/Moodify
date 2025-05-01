@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodifyAPI", "MoodifyAPI.csproj", "{39410A61-1F92-4E93-BB11-1DC4545F1A05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39410A61-1F92-4E93-BB11-1DC4545F1A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39410A61-1F92-4E93-BB11-1DC4545F1A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39410A61-1F92-4E93-BB11-1DC4545F1A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39410A61-1F92-4E93-BB11-1DC4545F1A05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7B2C05-8695-45F0-8159-A2427EDCAB8C}
+	EndGlobalSection
+EndGlobal

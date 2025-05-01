@@ -1,0 +1,13 @@
+# Angular
+/frontend/node_modules
+/frontend/dist
+
+# ASP.NET
+/backend/bin
+/backend/obj
+
+# VSCode & User-Daten
+.vscode/
+*.user
+*.suo
+*.log
