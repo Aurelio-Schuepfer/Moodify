@@ -13,6 +13,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{4792402B-CF57-46B2-AC0D-2F3DB8DC6418}"
 	ProjectSection(SolutionItems) = preProject
 		Mood.cs = Mood.cs
+		Song.cs = Song.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CF1D12BC-32AE-4338-99C7-7A0CDE123DC0}"
+	ProjectSection(SolutionItems) = preProject
+		SpotifyService.cs = SpotifyService.cs
 	EndProjectSection
 EndProject
 Global

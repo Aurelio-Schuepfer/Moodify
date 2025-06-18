@@ -8,7 +8,5 @@ namespace MoodifyAPI.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         { }
-
-        public DbSet<Mood> Moods { get; set; }
     }
 }

@@ -1,16 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MoodifyAPI.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class MoodController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MoodController : ControllerBase
+    private readonly SpotifyService _spotifyService;
+
+    public MoodController(SpotifyService spotifyService)
     {
-        [HttpGet]
-        public IActionResult GetMoods()
+        _spotifyService = spotifyService;
+    }
+
+    [HttpGet("{mood}")]
+    public async Task<IActionResult> GetSongsByMood(string mood, [FromHeader(Name = "Authorization")] string authHeader)
+    {
+        if (string.IsNullOrWhiteSpace(authHeader) || !authHeader.StartsWith("Bearer "))
+            return BadRequest("Token fehlt oder ist ungültig.");
+
+        var token = authHeader.Substring("Bearer ".Length).Trim();
+
+        try
         {
-            var moods = new string[] { "Happy", "Sad", "Excited", "Angry" };
-            return Ok(moods);
+            var songs = await _spotifyService.SearchSongsByMoodAsync(mood, token);
+            return Ok(songs);
+        }
+        catch
+        {
+            return StatusCode(500, "Songs konnten nicht geladen werden.");
         }
     }
 }

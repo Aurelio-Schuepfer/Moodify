@@ -1,0 +1,33 @@
+[
+  {
+    "ContainingType": "MoodController",
+    "Method": "GetSongsByMood",
+    "RelativePath": "api/Mood/{mood}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mood",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpotifyController",
+    "Method": "GetToken",
+    "RelativePath": "api/Spotify/token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

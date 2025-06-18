@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoodifyAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716b343689d2ccbf87c4e360ed2e939f8f1bf677")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87522b563fe68a78737f8b5c004f39378f9958f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoodifyAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoodifyAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

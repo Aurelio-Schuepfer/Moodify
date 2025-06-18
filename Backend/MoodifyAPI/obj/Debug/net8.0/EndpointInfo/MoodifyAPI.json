@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MoodifyAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Mood/{mood}": {
+      "get": {
+        "tags": [
+          "Mood"
+        ],
+        "parameters": [
+          {
+            "name": "mood",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Spotify/token": {
+      "get": {
+        "tags": [
+          "Spotify"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
